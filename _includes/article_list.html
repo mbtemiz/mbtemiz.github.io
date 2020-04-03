@@ -5,9 +5,8 @@
               <h6 class="font-weight-bold">
                   <a href="{{article.url}}" class="text-dark">{{ article.title }}</a>
               </h6>
-              <span class="d-block text-muted">
-                  
-              </span>
+              <span class="d-block text-muted"> {{article.authors}}</span>
+              <span class="d-block text-muted"> {{article.journal}} {{article.volume}}, {{article.issue}}, Page: {{article.pages}}, {{article.year}} </span>
           </span>
           </li>                
       {% endfor %}   
